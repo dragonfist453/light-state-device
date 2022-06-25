@@ -14,6 +14,6 @@ const lights = {
     roomRgb: new Gpio(7, 'out')
 };
 
-Object(lights).keys().forEach(light => {
+Object.keys(lights).forEach(light => {
     console.log(light);
 })
