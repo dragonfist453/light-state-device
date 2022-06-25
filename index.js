@@ -15,5 +15,11 @@ const lights = {
 };
 
 Object.keys(lights).forEach(light => {
-    console.log(light);
-})
+    socket.on(light, state => {
+        if (state === "on") {
+            lights[light].writeSync(1);
+        } else {
+            lights[light].writeSync(0);
+        }
+    });
+});
