@@ -17,8 +17,10 @@ const lights = {
 Object.keys(lights).forEach(light => {
     socket.on(light, state => {
         if (state === "on") {
+            console.log(`${light} is on`);
             lights[light].writeSync(1);
         } else {
+            console.log(`${light} is off`);
             lights[light].writeSync(0);
         }
     });
