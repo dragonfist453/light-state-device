@@ -1,7 +1,7 @@
 const Gpio = require('onoff').Gpio;
 const { io } = require("socket.io-client");
 
-const hostname = 'http://localhost:8080';
+const hostname = 'http://129.154.35.194/';
 const socket = io(hostname);
 
 const lights = {
