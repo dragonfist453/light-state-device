@@ -1,0 +1,23 @@
+{
+  "name": "light-state-device",
+  "version": "1.0.0",
+  "description": "Software on rpi device to control lights using server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "raspberrypi",
+    "iot"
+  ],
+  "author": "Karthik Ambu",
+  "license": "ISC",
+  "dependencies": {
+    "onoff": "^6.0.3",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
