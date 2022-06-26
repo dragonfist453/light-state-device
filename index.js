@@ -24,4 +24,5 @@ Object.keys(lights).forEach(light => {
             lights[light].writeSync(0);
         }
     });
+    console.log("/n");
 });
